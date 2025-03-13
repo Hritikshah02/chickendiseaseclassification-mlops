@@ -3,6 +3,9 @@ from src.cnnClassifier.components.prepare_callbacks import PrepareCallback
 from src.cnnClassifier.components.training import Training
 from src.cnnClassifier import logger
 
+import tensorflow as tf
+tf.config.run_functions_eagerly(True)
+
 STAGE_NAME = "Training"
 
 class ModelTrainingPipeline: 
